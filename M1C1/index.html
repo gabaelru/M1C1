@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1C1</title>
+    <script src="https://kit.fontawesome.com/a0e87f64ac.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Le&family=Single+Day&display=swap" rel="stylesheet">
+
+    <style>
+        .container{
+            width: 700px;
+        }
+
+        /*gridOne*/
+        .gridOne{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .textBlue{
+            color: blue;
+        }
+
+        /*gridTwo*/
+        .gridTwo{
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+
+        .divChild21{
+            background-color: red;
+        }
+
+        .divChild22{
+            background-color: blue;
+        }
+        .divChild23{
+            background-color: yellow;
+        }
+
+        /*gridThree*/
+        .gridThree{
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            width: 500px;
+            height: 300px;
+        }
+
+        .divChild31{
+            background-color: aquamarine;
+        }
+
+        .divChild32{
+            background-color: darkgrey;
+        }
+
+        .divChild32 img{
+            height: 225px;
+        }
+
+        /*gridFour*/
+        .gridFour{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            background-color: green;
+        }
+
+        #divChild42{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /*gridFive*/
+        .gridFive{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            background-color: aquamarine;
+        }
+
+        #divChild52{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        #divChild52 img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /*gridSix*/
+        .gridSix{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            width: 500px;
+            background-color: lightgray;
+        }
+
+        .gridSix .text{
+            font-family: "Single Day", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="gridOne">
+            <p>Hello World</p>
+            <p class="textBlue">My Fantastic Content</p>
+        </div>
+
+        <div class="gridTwo">
+            <div class="divChild21">
+                <p>whatever</p>
+            </div>
+            <div class="divChild22">
+                <p>text</p>
+            </div>
+            <div class="divChild23">
+                <p>I want</p>
+            </div>
+        </div>
+
+        <div class="gridThree">
+            <div class="divChild31">
+                <p>The text I chose is Awesome</p>
+            </div>
+            <div class="divChild32">
+                <img src="images/awesome.png" alt="">
+            </div>
+        </div>
+
+        <div class="gridFour">
+            <div class="divChild41">
+                <p>My Even More Awesome Text</p>
+            </div>
+            <div id="divChild42">
+                <p>My left text</p>
+                <p>My right text</p>
+            </div>
+        </div>
+
+        <div class="gridFive">
+            <div class="divChild51">
+                <p>My Even More Awesome Text</p>
+            </div>
+            <div id="divChild52">
+                <img src="images/gridFiveImg1.png" alt="">
+                <img src="images/gridFiveImg2.png" alt="">
+            </div>
+        </div>
+
+        <div class="gridSix">
+            <div class="icon">
+                <i class="fa-brands fa-square-pinterest"></i>
+            </div>
+            <div class="text">
+                <p>This is a paragraph with a Google Font.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
